@@ -1,0 +1,48 @@
+public class Main
+
+{
+	public static void main(String[] args) {
+
+//var
+
+double a,b,c;
+
+//entrada
+
+ a= Double.parseDouble(JOptionPane.showInputDialog("Digite o primeiro lado do triângulo"));
+
+b= Double.parseDouble(JOptionPane.showInputDialog("Digite o segundo lado do triângulo"));
+
+c= Double.parseDouble(JOptionPane.showInputDialog("Digite o terceiro lado do triângulo"));
+        
+
+//processamento 
+
+if (((a<(b+c)) && (a >(Math.abs(b-c)))) && ((b<(a+c)) && (b >(Math.abs(a-c)))) &&((c<(b+a)) && (c>(Math.abs(b-a))))){
+
+    if (((a==b) && (b==c) && (a==c))){
+
+         JOptionPane.showMessageDialog(null, "Equilátero");
+
+           }
+     if((a!=b)&&(b!=c)&&(a!=c)){
+        
+JOptionPane.showMessageDialog(null, "Escaleno");
+  
+         } 
+ if(((a==b)&&(b!=c))||((b==c)&&(c!=a))||(a==c)&&(c!=b)){
+  
+         JOptionPane.showMessageDialog(null, "Isóceles");           
+     
+      }
+
+        }else{
+   
+         JOptionPane.showMessageDialog(null, "Não é um triangulo");
+      
+    }
+	
+}
+
+}
+//desculpa a bagunça pro, tive que quebrar todas linhas no bloco de notas e devo ter errado algo, eu fiz em um java online compiler por conta que meu netbeans não abre

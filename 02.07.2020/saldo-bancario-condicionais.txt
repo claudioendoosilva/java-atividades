@@ -1,0 +1,42 @@
+public class Main
+
+{
+	public static void main(String[] args) {
+
+//var
+ 
+double saque, saldoatual, saldofinal, limite;
+
+//entrada
+
+saque= Double.parseDouble(JOptionPane.showInputDialog("Quanto quer sacar?"));
+
+saldoatual=1000;
+limite=2000;
+
+//processamento
+
+saldofinal= (saldoatual-saque);
+
+        
+if (saldofinal>=0){
+JOptionPane.showMessageDialog(null, "Saldo positivo com"+saldofinal);
+
+ }
+
+        
+if ((saldofinal<0) && (saldofinal>=(-limite))){
+
+JOptionPane.showMessageDialog(null, "Saldo positivo com"+saldofinal);
+
+        
+}else{
+
+JOptionPane.showMessageDialog(null, "Não possui limite, que é de"+limite); 
+ 
+ }
+
+ 
+	}
+
+}

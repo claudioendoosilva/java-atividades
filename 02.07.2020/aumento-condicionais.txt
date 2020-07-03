@@ -1,0 +1,19 @@
+public static void main(String[] args) {
+//var
+double salario,total;       
+//entrada
+salario= Double.parseDouble(JOptionPane.showInputDialog("Qual o seu salário:"));      
+//processamento
+if (salario<=1500){
+total= salario * 1.2;}      
+ else if ((salario>1500) && (salario<=3000)){
+total= salario * 1.15;
+}else{
+ total= salario * 1.1;
+ }   
+//saida  
+ JOptionPane.showMessageDialog(null, "Com seu aumento, seu salário sera"+total);
+  
+  }
+    
+}

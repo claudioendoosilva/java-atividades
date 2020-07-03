@@ -1,0 +1,18 @@
+ public static void main(String[] args) {
+//var
+double altura;
+int idade;
+ //entrada
+altura= Double.parseDouble( JOptionPane.showInputDialog("Qual é a sua altura:"));   
+idade= Integer.parseInt(JOptionPane.showInputDialog("Qual é a sua idade:"));
+//processamento
+if ((altura>=1.75) && (idade>=18))
+{
+JOptionPane.showMessageDialog(null, "Pode participar");        
+}else{  
+ JOptionPane.showMessageDialog(null, "Não pode participar");
+   }
+       
+  }
+    
+}
